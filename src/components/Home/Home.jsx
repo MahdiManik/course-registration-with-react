@@ -76,13 +76,13 @@ const Home = () => {
   return (
 
     <div className='bg-gray-200'>
-      <h3 className='text-3xl font-semibold text-center pt-10'>Course Registration: {courses.length}</h3>
+      <h3 className='text-3xl font-semibold text-center pt-10'>Course Registration</h3>
       <div className="flex items-start justify-center mt-4 gap-4 pb-12 ">
         <div className='w-4/6'>
           <div className='grid grid-cols-3 gap-6'>
             {courses.map(course => (
 
-              <div key={course.id} className=' bg-white gap-6 flex flex-col justify-start p-4 items-center  rounded-lg mt-12'>
+              <div key={course.id} className=' bg-white gap-4 w-full flex flex-col justify-start p-4 items-center rounded-lg mt-10'>
                 <div className='block'>
                   <img className='block rounded-md' src={course.image} alt="" />
                 </div>
@@ -94,7 +94,7 @@ const Home = () => {
                     <p>Credit: {course.credit}</p>
                   </div>
 
-                  <button onClick={() => handleSelectCourse(course)} className='px-6 py-2 text-white bg-blue-600 w-full rounded-lg'>Select</button>
+                  <button onClick={() => handleSelectCourse(course)} className='px-6 py-2 text-white bg-blue-700 w-full rounded-lg'>Select</button>
                   <ToastContainer />
                 </div>
               </div>
