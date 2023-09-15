@@ -1,13 +1,15 @@
 [
     {
       "image": "https://i.ibb.co/dfz4Y5M/Rectangle-2.png",
+      "id": "1",
       "title": "intro to python",
       "description": "Get started with the fundamentals of Python programming. Learn variables, data types, and basic syntax.",
       "course_price": "49.99",
       "credit": "1hr"
     },
     {
-      "image": "https://i.ibb.co/RhHNHcL/Rectangle-2-4.png",
+      "image": "https://i.ibb.co/1Rj5q0G/Rectangle-2-1.png",
+      "id": "2",
       "title": "java masterclass",
       "description": "Dive deep into Java programming with this comprehensive masterclass. Covers OOP, data structures, and more.",
       "course_price": "79.99",
@@ -15,6 +17,7 @@
     },
     {
       "image": "https://i.ibb.co/6Y97X18/Rectangle-2-2.png",
+      "id": "3",
       "title": "web development with HTML & CSS",
       "description": "Learn the basics of web development using HTML and CSS. Build your own static web pages from scratch.",
       "course_price": "29.99",
@@ -22,6 +25,7 @@
     },
     {
       "image": "https://i.ibb.co/Cz0mQKL/Rectangle-2-3.png",
+      "id": "4",
       "title": "JavaScript for beginners",
       "description": "Start your journey into JavaScript programming. Understand variables, functions, and DOM manipulation.",
       "course_price": "39.99",
@@ -29,6 +33,7 @@
     },
     {
       "image": "https://i.ibb.co/RhHNHcL/Rectangle-2-4.png",
+      "id": "5",
       "title": "C++ fundamentals",
       "description": "Master the C++ language, including pointers, classes, and templates. Ideal for aspiring game developers.",
       "course_price": "69.99",
@@ -36,6 +41,7 @@
     },
     {
       "image": "https://i.ibb.co/ypMVMJN/Rectangle-2-5.png",
+      "id": "6",
       "title": "Python data science",
       "description": "Learn Python for data analysis and visualization. Explore libraries like Pandas and Matplotlib.",
       "course_price": "59.99",
@@ -43,6 +49,7 @@
     },
     {
       "image": "https://i.ibb.co/MPwG0d2/Rectangle-2-6.png",
+      "id": "7",
       "title": "Ruby on Rails mastery",
       "description": "Become a Ruby on Rails pro. Build web applications and APIs with this powerful framework.",
       "course_price": "49.99",
@@ -50,6 +57,7 @@
     },
     {
       "image": "https://i.ibb.co/6FHmhvD/Rectangle-3.png",
+      "id": "8",
       "title": "SQL for beginners",
       "description": "Start your SQL journey. Learn to manage databases, write queries, and work with relational data.",
       "course_price": "34.99",
@@ -57,6 +65,7 @@
     },
     {
       "image": "https://i.ibb.co/54sLTsd/Rectangle-3-1.png",
+      "id": "9",
       "title": "Advanced JavaScript",
       "description": "Take your JavaScript skills to the next level. Explore async programming, ES6, and frameworks like React.",
       "course_price": "59.99",
