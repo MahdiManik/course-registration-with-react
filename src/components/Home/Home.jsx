@@ -23,7 +23,11 @@ const Home = () => {
     toast.error('Sorry! This item is already in your shopping cart', {
       position: toast.POSITION.TOP_CENTER,
     });
-
+  }
+  const showOverToast = () => {
+    toast.error('Sorry! This is already 20 in your cart', {
+      position: toast.POSITION.TOP_CENTER,
+    });
   }
 
   const handleSelectCourse = course => {
@@ -35,7 +39,6 @@ const Home = () => {
 
       showExistToast();
       return (
-  
         <div>
           <ToastContainer />
         </div >
@@ -43,23 +46,26 @@ const Home = () => {
     }
 
     else {
-      selectedCourse.forEach(element =>  (
+      selectedCourse.forEach(element => (
         count = count + element.credit
 
-        ))
+      ))
     }
 
     let totalRemaining = 20 - count;
     if (count > 20) {
-      totalRemaining = count
-      return <div>
+      totalRemaining = count;
 
+      showOverToast();
+
+      return <div>
+        <ToastContainer />
       </div>
     }
 
     else {
- 
-      setTotalCost(count )
+
+      setTotalCost(count)
       setTotalRemaining(totalRemaining)
 
       setSelectedCourse([...selectedCourse, course]);
