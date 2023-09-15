@@ -1,31 +1,25 @@
 
 import PropTypes from 'prop-types'
 
-const Cart = ({ selectedCourse }) => {
+const Cart = ({ selectedCourse, remaining, totalCost }) => {
   return (
     <>
       <div className='bg-white p-4 rounded-lg'>
-        <h3 className='text-3xl font-semibold pb-4'>Cart: {selectedCourse.length}</h3>
+        <h3 className='text-lg font-semibold text-violet-600 pb-4'>Credit Hour Remaining: {remaining} hr</h3>
         <hr />
         <h3 className='font-semibold text-lg mb-5 pl-2'>Course Name</h3>
         {
           selectedCourse.map((course, index) => (
 
-            <>
+            <div key={course.id} className='py-1 pl-2'>
+              <li className="text-md">{index + 1} {course.title}</li>
+            </div>
 
-              <div key={course.id} className='py-1 pl-2'>
-
-                <ol>
-                  <li className="text-md">{index + 1} {course.title}</li>
-                </ol>
-                <hr />
-              </div>
-
-            </>
           ))
         }
-        <div className=''>
-          <h4>Total Credit Hour : {selectedCourse.credit}</h4>
+        <div className='pt-6'>
+          <hr />
+          <h3 className='text-lg font-semibold pb-4'>Total Credit Hour: {totalCost} hr</h3>
         </div>
       </div>
     </>
@@ -33,7 +27,9 @@ const Cart = ({ selectedCourse }) => {
 }
 
 Cart.propTypes = {
-  selectedCourse: PropTypes.array.isRequired
+  selectedCourse: PropTypes.array.isRequired,
+  remaining: PropTypes.number,
+  totalCost: PropTypes.number
 }
 
 export default Cart
