@@ -14,4 +14,4 @@
 
 ##  2. Managing State
  
-In my project, I first used useStatus, an empty array, then distracted it into two arrays called "data" and "setData," and last used "useEffect" to "fetch" the data from the fake data. and data provide the "setData", after which I run a loop in data to find all of the data for each element, I utilize the data.
+The state is a way to handle data in React, In my project, I first used useStatus and I set on an empty array then destructured it into two arrays called this type name "datas" and "setDatas," and then I used "useEffect" to "fetch" the data from the fake data. and data set to "setDatas", after which I run a loop in datas to find all of the data for each element, then I utilize the data to that.
