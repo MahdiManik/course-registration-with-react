@@ -1,8 +1,18 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Answer of Tasks
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+##  1. 3 Features in My Project
+
+- Course Names can be Added to the Cart
+- Can be Added Total Credit Hour with Remaining Hour to the Cart
+- Each Course Should Have Some Details
+
+
+
+## Documentation
+
+2, 
+In my project, I first used useStatus, an empty array, then distracted it into two arrays called "data" and "setData," and last used "useEffect" to "fetch" the data from the fake data. and data provide the "setDatas", after which I run a loop in data to find all of the data for each element, I utilize the data.

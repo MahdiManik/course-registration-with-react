@@ -20,12 +20,12 @@ const Home = () => {
   }, [])
 
   const showExistToast = () => {
-    toast.error('Sorry! This item is already in your shopping cart', {
+    toast.error('Sorry! This Course is already in your cart', {
       position: toast.POSITION.TOP_CENTER,
     });
   }
   const showOverToast = () => {
-    toast.error('Sorry! This is already 20 in your cart', {
+    toast.error('Sorry! This is already Total Credit Hour is 20, and Credit Hour Remaining is 0  in your cart', {
       position: toast.POSITION.TOP_CENTER,
     });
   }
